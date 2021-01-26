@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 h1{
 font-family: 'Kaushan Script', cursive;
 text-align: right;
 }
-div {
-  width:100px;
-  height: 100px;
+.menuItem {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  pointer-events: none;
+}
+.menu {
+  width:50px;
+  height: 50px;
   background-color: tomato;
   transition: width 1s, height 1.4s ease-in-out;
-  animation-name: color-shift;
+  overflow: hidden
 }
-div:hover{
-  width: 200px;
-  height: 300px;
+.menu.out {
+background-color: tomato;
+  width: 70%;
+  height: 100vh;
 }
-@keyframes color-shift {
-  0% {
-    background-color: tomato;
-    font-size: 10px;
-  }
-  66% {
-    background-color: green;
-  }
-  100% {
-    background-color: tomato;
-    font-size: 100px;
-  }
+.menu.out .menuItem {
+  opacity: 1;
+  pointer-events: all;
+}
+toggleAnimation = (evt) => {
+       evt.target.classList.toggle("out");
+     };
+     document
+       .querySelector(".menu")
+       .addEventListener("click", toggleAnimation);
