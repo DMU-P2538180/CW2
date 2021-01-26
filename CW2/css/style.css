@@ -2,15 +2,28 @@
 
 h1{
 font-family: 'Kaushan Script', cursive;
-text-align: center;
+text-align: right;
 }
 div {
   width:100px;
   height: 100px;
   background-color: tomato;
   transition: width 1s, height 1.4s ease-in-out;
+  animation-name: color-shift;
 }
 div:hover{
   width: 200px;
   height: 300px;
 }
+@keyframes color-shift {
+  0% {
+    background-color: tomato;
+    font-size: 10px;
+  }
+  66% {
+    background-color: green;
+  }
+  100% {
+    background-color: tomato;
+    font-size: 100px;
+  }
