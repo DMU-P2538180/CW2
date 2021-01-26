@@ -11,6 +11,14 @@
     <a href="index.html" class="active">Home</a>
     <a href="photography.html">Photography</a>
     <a href="videography.html">Videography<a/>
+      <script>
+      toggleAnimation = (evt) => {
+        evt.target.classList.toggle("out");
+      };
+      document
+        .querySelector(".menu")
+        .addEventListener("click", toggleAnimation);
+    </script>
   </nav>
   <h1> Videography <h1>
   </body>
