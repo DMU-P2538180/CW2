@@ -8,7 +8,7 @@ text-align: right;
   font-family: 'Kaushan Script', cursive;
   font-size: 1.5em;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: 0.3s;
   color: white;
   pointer-events: none;
 }
@@ -21,8 +21,8 @@ text-align: right;
 }
 .menu.out {
 background-color: tomato;
-  width: 70vw;
-  height: 100vh;
+  width:25vw;
+  height: 50vh;
 }
 .menu.out .menuItem {
   opacity: 1;
