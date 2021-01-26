@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 h1{
 font-family: 'Kaushan Script', cursive;
 text-align: right;
 }
 .menuItem {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-size: 1.5em;
   opacity: 0;
   transition: opacity 0.3s;
