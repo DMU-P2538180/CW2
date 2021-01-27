@@ -22,7 +22,7 @@ text-align: right;
 .menu.out {
 background-color: tomato;
   width:25vw;
-  height: 0vh;
+  height: 50px;
 }
 .menu.out .menuItem {
   opacity: 1;
