@@ -28,3 +28,27 @@ background-color: tomato;
   opacity: 1;
   pointer-events: all;
 }
+body {
+        margin: 0;
+      }
+
+      @keyframes faze {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background: rgb(180,58,97);
+background: radial-gradient(circle, rgba(180,58,97,1) 0%, rgba(253,29,29,1) 50%, rgba(252,210,69,1) 100%);
+        animation: faze 10s infinite;
+        background-size: 400% 400%;
+      }
