@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width"/>
+    <title>Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <nav class="menu">
+    <a href="index.html" class="menuItem">Home</a>
+    <a href="photography.html" class="menuItem">Photography</a>
+    <a href="contact.html" class="menuItem">Contact</a>
+  </nav>
+  <script>
+      toggleAnimation = (evt) => {
+        evt.target.classList.toggle("out");
+      };
+      document
+        .querySelector(".menu")
+        .addEventListener("click", toggleAnimation);
+    </script>
+  <h1> Contact <h1>
+    <p> Find me on: </p>
+    <p>Instagram</p>
+    <p><a href="https://www.instagram.com/carmendoesphotography/">
+<img src="img/rrinsta.jpg" alt="Instagram Link" width="100" height="100">
+</a>
+<p>Facebook</p>
+<a href="https://www.facebook.com/Carmen-Does-Photography-106549797929100/">
+<img src="img/fb.png" alt="Facebook Link" width="100" height="100">
+</p>
+<p><a href="mailto:someone@example.com">Click here to send me an email!</a></p>
+
+  </body>
+</html>
+<footer>
+</footer>
