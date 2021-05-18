@@ -20,10 +20,12 @@
         .querySelector(".menu")
         .addEventListener("click", toggleAnimation);
     </script>
+    <div>
   <h1> Photography <h1>
-  <h2 style="text-align:center">Multiple Slideshows</h2>
-
+  </div>
+    <p> Welcome to my Photography page! Scroll down to look at this months new release </p>
   <p>Casey and Gizmo: 07/04/2021:</p>
+  <!-- links the slideshow and the css together, also includes the different images used within the slideshow -->
   <div class="slideshow-container">
     <div class="mySlides1">
       <img src="img/gizmo.JPG" style="width:100%">
@@ -49,27 +51,40 @@
     <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
   </div>
 
-  <p>Slideshow 2:</p>
+  <p>May Edition: Sinead and Sammi:</p>
   <div class="slideshow-container">
     <div class="mySlides2">
-      <img src="img/bodyshop.JPG" style="width:100%">
+      <img src="img/inead/one.JPG" style="width:100%">
     </div>
 
     <div class="mySlides2">
-      <img src="img/water.JPG" style="width:100%">
+      <img src="img/inead/two.JPG" style="width:100%">
     </div>
 
     <div class="mySlides2">
-      <img src="img/roses.jpg" style="width:100%">
+      <img src="img/inead/three.jpg" style="width:100%">
     </div>
+
+    <div class="mySlides2">
+      <img src="img/inead/four.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <img src="img/inead/five.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <img src="img/inead/six.jpg" style="width:100%">
+    </div>
+
 
     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
   </div>
-
+<!-- the script includes the images switching between eachother along with seperating both slideshows -->
   <script>
   var slideIndex = [1,1];
-  var slideId = ["mySlides1", "mySlides2"]
+  var slideId = ["mySlides1", "mySlides2",]
   showSlides(1, 0);
   showSlides(1, 1);
 
@@ -88,7 +103,12 @@
     x[slideIndex[no]-1].style.display = "block";
   }
   </script>
-
-
 </body>
+<footer>
+  <div class="backtotop">
+    <!-- adds a link at the bottom of the page to direct the user to the top of the page -->
+  <a href="#">Back To Top</a>
+  <p>Carmen Swannell - P2538180 </p>
+</div>
+</footer>
 </html>

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!-- Sets the language to English -->
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
+<!-- Allows the website to be Mobile Friendly -->
+    <!-- Enables my website to fit the screen of any device -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Enables my website to fit the screen of any device -->
     <title>Home</title>
+    <!-- Name of the webpage as seen in the link -->
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- connects the main HTML to the Style Sheet -->
   </head>
   <body>
     <nav class="menu">
+      <!-- enables the menu to be styled by the CSS page -->
     <a href="index.html" class="menuItem">Home</a>
     <a href="photography.html" class="menuItem">Photography</a>
     <a href="contact.html" class="menuItem">Contact</a>
+    <!-- provides a link to other webpages -->
   </nav>
+  <!-- ends what is included in the menu -->
   <script>
+  // starts the script which will create a transition to show the links to other pages, this will act as a menu button
       toggleAnimation = (evt) => {
         evt.target.classList.toggle("out");
       };
@@ -21,26 +30,28 @@
         .querySelector(".menu")
         .addEventListener("click", toggleAnimation);
     </script>
-    <img
-    src=img/header.jpg
-  </img>
+    <div>
   <h1> Home <h1>
-    <p> Hi! Welcome to my portfolio! Take a look at all my photography work I have produced.
-    Click on the photo's below to see their gallery! Or use the menu at the top of the page to have a look at all photography</p>
-<div class="container">
-  <a href="default.asp">
-  <img src="img/gizmo.JPG" alt="Gizmo" class="image"
-</a>
-  <div class="overlay">
-    <div class="text">Gizmo and Casey 07/04/2021</div>
   </div>
-</div>
+<!-- adds a header to the page and also allows for styling -->
+    <p> Hi! Welcome to my portfolio! Take a look at all my photography work I have produced.
+    Click on the video below to see the new release for this month! Or use the menu at the top of the page to have a look at all my photography</p>
+<!-- allows for text to be added and styled -->
+<video controls width=90% height=90%>
+  <source src="vid/trailer.mp4" type="video/mp4">
+  <source src="vid/trailer.ogg" type="video/ogg">
+<!-- two different video types were added incase one video isnt able to play -->
+<p>Your browser does not support the video element. Please click <a href='vid/trailer.mp4'>here</a> to download an mp4 of the video.</p>
+<!-- adds a message and a link to download in the case of the video not being able to be played on the website -->
+</video>
 
   </body>
   <!DOCTYPE html>
 <footer>
   <div class="backtotop">
+    <!-- adds a link at the bottom of the page to direct the user to the top of the page -->
   <a href="#">Back To Top</a>
   <p>Carmen Swannell - P2538180 </p>
 </div>
 </footer>
+</html>

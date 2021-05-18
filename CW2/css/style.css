@@ -1,28 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-h1{
-font-family: 'Kaushan Script', cursive;
+/* adds a font from google/online to use on the website */
+p{
+  font-family: 'Kaushan Script', cursive;
+/* sets the font to the font imported from google */
+font-size: 50px;
 text-align: center;
 }
+video{
+  margin: 2%;
+  /* creates space between the edge of the screen and the video */
+  width: 97%;
+  /* sets the width of the video player */
+}
+
+h1 {
+font-weight: bold;
+/*makes the font bold */
+font-size: 300%;
+/*changes the font size */
+text-align: center;
+/* aligns the text to the centre of the page */
+font-family: 'Kaushan Script', cursive;
+background-color: tomato;
+/*adds a background colour to the text */
+
+}
+div{
+  border: 1px solid black;
+  background-color: tomato;
+}
+
+h2 {
+font-weight: bold;
+/*makes the font bold */
+font-size: 250%;
+/*changes the font size */
+text-align: center;
+/* aligns the text to the centre of the page */
+}
+
 
 footer{
   /*adds a style to the footer on the page */
   background-color: tomato;
   text-align: center;
 }
-img{
-  width: 100%;
-}
+
 .container {
   position: relative;
   width: 50%;
 }
-
+/* described the image style */
 .image {
   display: block;
   width: 500px;
   height: auto;
 }
-
+/* sets the style whilst the menu opens */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -34,11 +68,7 @@ img{
   height: 0;
   transition: .5s ease;
 }
-
-.container:hover .overlay {
-  height: 100%;
-}
-
+/* sets the text to be hidden when menu is not open */
 .text {
   white-space: nowrap;
   color: white;
@@ -50,6 +80,7 @@ img{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+/* sets the items within the menu to the style below */
 .menuItem {
   padding: 10px;
   font-family: 'Kaushan Script', cursive;
@@ -59,6 +90,7 @@ img{
   color: white;
   pointer-events: none;
 }
+/* sets the menu style before being clicked */
 .menu {
   width:50px;
   height: 50px;
@@ -66,18 +98,21 @@ img{
   transition: width 1s, height 1.4s ease-in-out;
   overflow: hidden;
 }
+/* once clicked, this sets the extended menu out */
 .menu.out {
 background-color: tomato;
   width:25vw;
-  height: 25vh;
+  height: 10vh;
 }
+
 .menu.out .menuItem {
   opacity: 1;
   pointer-events: all;
 }
 
+/*styles the slides and images to be set in the middle of the page */
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+.mySlides1, .mySlides2, {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
