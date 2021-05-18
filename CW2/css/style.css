@@ -6,12 +6,6 @@ p{
 font-size: 50px;
 text-align: center;
 }
-video{
-  margin: 2%;
-  /* creates space between the edge of the screen and the video */
-  width: 97%;
-  /* sets the width of the video player */
-}
 
 h1 {
 font-weight: bold;
